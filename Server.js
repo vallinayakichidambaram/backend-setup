@@ -21,4 +21,7 @@ app.get("/getJsonWithStatus", (req, res) => {
 app.get("/downloadFile", (req, res) => {
   res.download("Server.js");
 });
+
+app.set("view engine", "ejs");
+
 app.listen(3000);
