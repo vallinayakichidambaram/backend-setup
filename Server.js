@@ -24,4 +24,8 @@ app.get("/downloadFile", (req, res) => {
 
 app.set("view engine", "ejs");
 
+app.get("/renderHtml", (req, res) => {
+  res.render("index", { text: "locals" });
+});
+
 app.listen(3000);
